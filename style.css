@@ -1,0 +1,94 @@
+/* RESET & BASIC FONTS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #fff; /* White background */
+    color: #000;            /* Black text */
+    font-size: 14px;        /* Small, crisp text size */
+    letter-spacing: 1px;    /* Slight spacing between letters */
+    text-transform: uppercase; /* Makes everything CAPS */
+    line-height: 1.5;
+}
+
+/* LAYOUT CONTAINER */
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* SIDEBAR STYLES */
+.sidebar {
+    width: 300px;           /* Fixed width for sidebar */
+    padding: 40px;
+    position: fixed;        /* Keeps sidebar stuck in place */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+.menu {
+    list-style: none;
+    flex-grow: 1; /* Pushes contact info to the bottom */
+}
+
+.menu li {
+    margin-bottom: 12px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #000;
+    transition: opacity 0.3s;
+}
+
+.menu a:hover {
+    opacity: 0.5; /* Fades slightly on hover */
+}
+
+.menu span {
+    margin-right: 5px; /* Space between arrow and text */
+    font-size: 1.2em;
+}
+
+.contact p {
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+
+/* CONTENT AREA STYLES */
+.content {
+    margin-left: 300px; /* Same as sidebar width */
+    padding: 50px 80px;
+    width: 100%;
+    max-width: 900px;   /* Stops text from getting too wide */
+}
+
+section {
+    margin-bottom: 100px; /* Space between sections */
+    min-height: 60vh;     /* Ensures sections take up room */
+    padding-top: 20px;
+}
+
+h2 {
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+.external-link {
+    color: blue; /* Or keep black if you prefer */
+    text-decoration: none;
+    border-bottom: 1px solid blue;
+}
